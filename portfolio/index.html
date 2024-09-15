@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvana Korrapati - Data Analytical Engineer</title>
+    <style>
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #808080; /* Changed to gray */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #666666; /* Darker gray for hover effect */
+        }
+    </style>
+    <style>
+        .about-me h2,
+        .education h2 {
+            font-size: 18px; /* Increased from default 16px */
+        }
+
+        .about-me p,
+        .education h3,
+        .education p,
+        .education ul {
+            font-size: 14px; /* Increased from default 13px */
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f5f5dc;
+            color: #333;
+            line-height: 1.6;
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .left-section {
+            flex: 1;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-section {
+            flex: 2;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .profile-details h1 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .profile-details h2 {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile-details p {
+            font-size: 12px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #0066cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 11px;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #003f7f;
+        }
+
+        .right-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .right-section p, .right-section li {
+            font-size: 12px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .project-item img {
+            width: 55%; /* Reduced the image size to half */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project-item h3 {
+            font-size: 15px;
+            margin: 10px 0;
+        }
+
+        .project-item p {
+            font-size: 12px;
+        }
+
+        .project-item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        #experience, #certifications-publications, #skills {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            font-size: 12px;
+            margin: 5px 0;
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+        }
+
+        .experience-item li {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            font-size: 12px;
+            margin-bottom: 5px;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .skills-list strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .cert-item {
+            text-align: center;
+        }
+
+
+        .cert-item img {
+            width: 75%;
+            max-width: 200px; /* Increase the max width to display larger images */
+            height: auto;
+            border-radius: 5px;
+        }
+
+
+
+        .cert-item p {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .cert-item a {
+            display: inline-block;
+            margin-top: 5px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .publications {
+            margin-top: 20px;
+        }
+
+        .publications h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .publications p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .publications a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .publications a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="profile-section">
+            <div class="profile-container">
+                <div class="left-section">
+                    <img src="pictures/Bhuvana.jpg" alt="Bhuvana Korrapati" class="profile-image">
+                    <div class="profile-details">
+                        <h1>Bhuvana Korrapati</h1>
+                        <h2>Data Analytical Engineer</h2>
+                        <p>bhuvanakorrapati46@gmail.com</p>
+                        <p>Mobile: +1 (336) 255-5701</p>
+                        <p>NC, USA</p>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="about-me">
+                        <h2>About Me</h2>
+                        <p>I am a Data Analytical Engineer with an MS in Data Science, specializing in designing efficient ETL pipelines, statistical analysis, and data visualization. My background includes research work, experience in creating ETL pipelines, and hands-on projects across financial, enterprise, and health sectors using AWS and Azure. I am skilled in creating insightful dashboards with Power BI and Tableau and have expertise in AI/ML applications, reflecting my commitment to innovative solutions and continuous learning.</p>
+                    </div>
+                    <div class="education">
+                        <h2>Education</h2>
+                        <h3>Masters at University of North Carolina at Greensboro</h3>
+                        <p>Data Science Concentration | 2022-2024 | CGPA: 3.9</p>
+                        <ul>
+                            <li>Published research work in data science.</li>
+                            <li>Engaged in impactful AI/ML projects across various domains.</li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/bhuvana-korrapati-83363a16b/" class="btn" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/bhuvana12345?tab=repositories" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="selected-projects">
+            <h2>Selected Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="pictures/ai.jpeg" alt="Federated Machine Learning">
+                    <h3>Federated Machine Learning</h3>
+                    <p>Advanced federated learning project integrating model compression, PCA-based dimensionality reduction, and fine-tuning to enhance communication efficiency and data privacy.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Python, PyTorch, TensorFlow, PCA, Model Compression, PySyft, NumPy, Pandas</p>
+                    <a href="https://github.com/bhuvana12345/Federated-Machine-Learning_thesis" target="_blank">GitHub</a>
+                </div>
+        
+                <div class="project-item">
+                    <img src="pictures/snow.jpeg" alt="Snowflake LLM Project">
+                    <h3>Snowflake LLM Project</h3>
+                    <p>Demonstrating advanced SQL techniques in Snowflake for optimizing cost management, data transformation, and governance, with AI/ML integration for scalable solutions.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Snowflake, SQL, Snowpark, Python, AWS, Azure</p>
+                    <a href="https://github.com/bhuvana12345/Snowflake-Tasty-Bites" target="_blank">GitHub</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <img src="pictures/amz.png" alt="Amazon Recommendation System">
+                    <h3>Amazon Recommendation System</h3>
+                    <p>Developed a recommendation system for Amazon using collaborative and content-based filtering algorithms to enhance customer experience and drive sales.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Python, scikit-learn, PyTorch, Surprise Library, KNN, Matrix Factorization</p>
+                    <a href="https://github.com/bhuvana12345/Amazon-Recommendation-system" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <img src="pictures/med.jpeg" alt="Breast Cancer Detection">
+                    <h3>Breast Cancer Detection</h3>
+                    <p>A machine learning system using CNNs and SVMs for early detection of breast cancer, achieving high diagnostic accuracy.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Python, TensorFlow, Keras, OpenCV, CNN, SVM</p>
+                    <a href="https://github.com/bhuvana12345/Breast-cancer-detection" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item">
+                    <img src="pictures/spee.jpeg" alt="Speech Emotion Recognition">
+                    <h3>Speech Emotion Recognition</h3>
+                    <p>Implemented a system classifying human emotions from speech using CNN-based models, enhancing human-computer interaction by recognizing emotions in real-time.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Python, TensorFlow, Keras, Librosa, MFCC, Spectrogram Analysis</p>
+                    <a href="https://github.com/bhuvana12345/Speech-Emotion-Detection" target="_blank">GitHub</a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item">
+                    <img src="pictures/crop.jpeg" alt="Crop Recommendation System">
+                    <h3>Crop Recommendation System</h3>
+                    <p>A machine learning-based system recommending optimal crops based on environmental factors, helping farmers make data-driven decisions for crop selection.</p>
+                    <p class="tools"><strong>Tools/Technologies:</strong> Python, scikit-learn, Random Forests, Decision Trees, KNN, Pandas, Seaborn</p>
+                    <a href="https://github.com/bhuvana12345/Crop-Analysis" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certifications-publications">
+            <h2>Certifications and Publications</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="pictures/azure.png" alt="Microsoft Certified Azure Developer">
+                    <p>Microsoft Certified Azure Developer</p>
+                    <a href="https://learn.microsoft.com/en-us/users/BhuvanaKorrapati-0204/credentials/67B872D6968AD540" target="_blank">View Certificate</a>
+                </div>
+            
+                <div class="cert-item">
+                    <img src="pictures/python.png" alt="python Certification">
+                    <p>Python Certification 2</p>
+                    <a href="https://coursera.org/share/824b3ff2344da166b839e95b1c030325" target="_blank">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <img src="pictures/ln.png" alt="Data Analysis Certificate">
+                    <p>Data Analysis Certificate</p>
+                    <a href="https://www.linkedin.com/learning/certificates/56a0ea7979afc557752bf3e2205a55288c63c2ccbafc5dec46624409a1e16dc8" target="_blank">View Certificate</a>
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="publications">
+                <h3>Publications</h3>
+                <div class="publication-item">
+                    <p><a href="https://orcid.org/0009-0005-3507-9710" target="_blank">Enhancing Federated Machine Learning Efficiency and Optimization</a></p>
+                    <p>This research presents a dynamic federated learning framework that optimizes communication and privacy through model compression, PCA-based dimensionality reduction, and adaptive fine-tuning, ensuring robust performance in decentralized environments.</p>
+                </div>
+                <div class="publication-item">
+                    <p><a href="https://link.springer.com/chapter/10.1007/978-981-15-8685-9_53" target="_blank">A safety stick for elders</a></p>
+                    <p>This research explores an IoT-enabled safety stick designed for elders with Alzheimer's, featuring sensors that track and send real-time location data to caregivers, alongside additional safety functionalities.</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Python, R, SQL, Java, C, C++, Scala, Unix/Linux Shell Scripting</li>
+                <li><strong>Databases & Data Warehousing:</strong> PostgreSQL, MySQL, NoSQL, MongoDB, Snowflake, Amazon Redshift, Azure Synapse Analytics</li>
+                <li><strong>Big Data & Cloud:</strong> Hadoop, Spark, Hive, Kafka, AWS (S3, EC2, EMR, RedShift), Azure (Databricks, Data Factory, Synapse Data Lake, Fabrics), GCP</li>
+                <li><strong>Data Analytics/ML/AI:</strong> Pandas, NumPy, TensorFlow, PyTorch, scikit-learn, Keras, XGBoost, MLflow, Matplotlib, Seaborn</li>
+                <li><strong>ETL & Processing Tools:</strong> Apache Airflow, Talend, Informatica, Git, Docker, Kubernetes, NLTK, Transformers, DBT</li>
+                <li><strong>NO SQL Databases:</strong> MariaDB, MongoDB, Cassandra</li>
+                <li><strong>BI & Visualization:</strong> Tableau, Power BI, Matplotlib, Seaborn, Looker, Excel (Advanced formulas, Pivot Tables), SQL (Complex Queries, Data Cleaning)</li>
+                <li><strong>Reporting Tools:</strong> MS Office (Word/Excel/PowerPoint/Visio/Outlook), SSRS</li>
+
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <div class="experience-item">
+                <section id="experience-summary">
+                    <h2>Experience Summary</h2>
+                    <ul>
+                        <li>Collected and managed large-scale data from diverse sources, using web scraping and data extraction processes to gather text and image data, and processed multiple data formats like Parquet, JSONL, and CSV for efficient storage and retrieval.</li>
+                        <li>Developed scalable ETL pipelines, leveraging SQL Server, MongoDB, Hadoop, Databricks with Apache Spark and PySpark, achieving 98% data accuracy and reducing ETL processing time by 20% through data structure optimization and storage solutions.</li>
+                        <li>Implemented real-time data streaming solutions using Apache Kafka, processing 8TB of daily data, and optimized query performance by 16% using advanced data warehousing techniques in Synapse and Snowflake.</li>
+                        <li>Orchestrated data workflows with Apache Airflow, designing complex DAGs for data processing and automating workflows, reducing operational errors by 40%, and enhancing financial report accuracy.</li>
+                        <li>Utilized Azure Data Factory to design and manage data pipelines, orchestrating data movement and transformation across various services, ensuring seamless data integration and processing.</li>
+                        <li>Integrated CI/CD pipelines using Jenkins and Azure DevOps, enabling seamless testing and deployment of data engineering solutions across environments, maintaining high code quality and reducing errors.</li>
+                        <li>Configured and maintained Snowflake as the central data warehouse, designing star schema and data vault models, while continuously optimizing query performance through indexing and partitioning.</li>
+                        <li>Created interactive Power BI dashboards using custom DAX measures, increasing player engagement by 15% and enhancing prize distribution efficiency by 25%, while providing stakeholders with actionable insights.</li>
+                        <li>Collaborated with data scientists to implement machine learning models for credit risk assessment using Python (sklearn, matplotlib), and integrated them within data pipelines for model validation and performance evaluation.</li>
+                        <li>Applied machine learning algorithms such as Random Forest, Support Vector Machine (SVM), and K-Means clustering to enhance predictive analytics and improve decision-making in various sectors, including finance and healthcare.</li>
+                        <li>Managed version control using Git for all data and machine learning projects, leveraging branching strategies and code reviews to maintain collaboration and code quality.</li>
+                    </ul>
+                </section>
+            </div>
+        </section> 
+
+
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Bhuvana Korrapati.</p>
+    </footer>
+</body>
+</html>
